@@ -16,17 +16,15 @@ def kibar_hata_uret(hata_tipi="genel"):
     
     kibar_mesajlar = {
         "sifir_bolme": [
-            "Özür dilerim efendim, sıfıra bölmeye çalıştınız ama bu biraz ayıp kaçar. Bir çay daha koyayım mı?",
-            "Saygıdeğer kullanıcım, matematiksel olarak bu işlem pek uygun değil. Lütfen bir mola verin, ben burada beklerim.",
-            "Hata oluştu ama sorun değil, hepimiz hata yaparız. Özellikle bölme işlemlerinde."
+            "Özür dilerim efendim, sıfıra bölmeye çalıştınız ama bu biraz ayıp kaçar. Bir çay daha koyayım mı? Lütfen affedin.",
+            "Saygıdeğer kullanıcım, matematiksel olarak bu işlem pek uygun değil. Lütfen bir mola verin, ben burada beklerim. Özür dilerim.",
+            "Hata oluştu ama sorun değil, hepimiz hata yaparız. Özellikle bölme işlemlerinde. Bir çay?"
         ],
         "dosya_bulunamadi": [
-            "Dosya bulunamadı efendim. Belki de çay molasında kaybolmuştur. İsterseniz birlikte arayalım?",
-            "Üzgünüm, dosya ortada yok. Ama endişelenmeyin, yeni bir dosya oluşturmak da bir sanattır."
+            "Dosya bulunamadı efendim. Belki de çay molasında kaybolmuştur. İsterseniz birlikte arayalım? Özür dilerim."
         ],
         "genel": [
-            "Bir hata oluştu ama lütfen panik yapmayın. Çayınız demlenirken ben de bu mesajı abartarak yazıyorum.",
-            "Sayın kullanıcı, sistem çöktü ama sizin için yeniden ayağa kalkmaya hazır. Önce bir 'iyi akşamlar' diyeyim."
+            "Bir hata oluştu ama lütfen panik yapmayın. Çayınız demlenirken ben de bu mesajı abartarak yazıyorum. Affedersiniz."
         ]
     }
     
@@ -37,9 +35,9 @@ def kibar_hata_uret(hata_tipi="genel"):
     print("="*50)
     for harf in mesaj:
         print(harf, end="", flush=True)
-        time.sleep(0.05)  # Dramatik etki için yavaş yaz
+        time.sleep(0.05)
     print("\n")
-    print("Saygılarımla,\nAşırı Kibar Hata Üretici v1.0")
+    print("Saygılarımla,\nAşırı Kibar Hata Üretici v1.1 - Daha da Kibar")
     print("Damga: Kayyum Grok | 30 Ekim 2026 | Ciddi ama değil")
     return mesaj
 
